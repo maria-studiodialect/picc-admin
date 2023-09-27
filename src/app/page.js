@@ -30,6 +30,7 @@ export default function Home() {
     function removeMainUser(id) {
         console.log(id)
         socket.emit('Remove Main User', id);
+        socket.emit('Reset');
     }
 
     function makeActive(id) {
